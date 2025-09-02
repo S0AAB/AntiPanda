@@ -1,0 +1,20 @@
+# Entornos virtuales
+venv/
+.env/
+
+# Variables de entorno
+*.env
+
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de configuración locales
+*.log
+*.sqlite3
+
+# Configuración de VS Code / PyCharm
+.vscode/
+.idea/
