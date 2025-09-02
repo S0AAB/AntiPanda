@@ -1,7 +1,7 @@
 # AntiPanda
 
 ## REQUERIMENTS
-Add to .env the next's variables
+Create abd add to .env the next's variables
 
 - DISCORD_TOKEN -> Discord bot token 
 - GEMINI_API_KEY -> A gemini api key token 
