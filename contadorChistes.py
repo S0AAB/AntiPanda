@@ -10,4 +10,5 @@ def obtener_total_chistes() -> int:
     return contador_chistes_malos
 
 def reset_contador()->None:
+    global contador_chistes_malos
     contador_chistes_malos=0

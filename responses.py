@@ -29,7 +29,7 @@ async def manejar_mensaje(mensaje: str) -> str:
 
     if accion == "sumar":
         contadorChistes.sumar_chiste_malo()
-        return f"Se sumo 1 chiste malo al contador. Lleva {contadorChistes.obtener_total_chistes}"
+        return f"Se sumo 1 chiste malo al contador. Lleva {contadorChistes.obtener_total_chistes()}"
 
     elif accion == "total":
         return f"Panda lleva {contadorChistes.obtener_total_chistes()} chistes malos  "
@@ -52,7 +52,7 @@ def contradecir_mensaje(mensaje: str) -> str:
     return respuesta.text
 
 def responder_mensaje(mensaje: str) -> str:
-    prompt = f"Responde el mensaje , siempre de manera graciosa: \"{mensaje}\""
+    prompt = f"Responde el mensaje siempre con sarcasmo , agresivo y tajante , respuestas cortas: \"{mensaje}\""
     respuesta = client.models.generate_content(
         model="gemini-2.5-flash", contents=prompt
     )
